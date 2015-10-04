@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'commonwatir'
+gem 'watir'
+gem 'minitest'
+gem 'cucumber'
+gem 'watir-webdriver'
+gem 'rspec'
+gem 'headless'
+gem 'rspec-expectations'
