@@ -1,5 +1,4 @@
 task :deploy do |t|
-  Bundler.with_clean_env do
-    sh "bundle install --deployment"
-  end
+  puts 'freezing gems'
+  sh"RUBYOPT='' bundle install --deployment"
 end
