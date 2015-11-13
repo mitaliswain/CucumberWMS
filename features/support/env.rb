@@ -8,6 +8,8 @@ class MinitestWorld
     self.assertions = 0
   end
 
+
+
 end
 
 World do

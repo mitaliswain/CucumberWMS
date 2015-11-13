@@ -4,15 +4,16 @@ require 'watir-webdriver'
 
 include Test::Unit::Assertions
 
+#Selenium::WebDriver::Chrome::Service.executable_path = '/Users/Mitaliswain/RubymineProjects/CucumberWMS/chromedriver'
 browser = Watir::Browser.new
 @browser = browser
 
 Given(/^I am in login page$/) do
-  browser.goto "localhost:3000/login"
+  browser.goto "http://wmsui.herokuapp.com/login"
 end
 
 When(/^I enter the user id as "([^"]*)"$/) do |userid|
-  browser.text_field(:id,'username').set(userid)
+  browser.text_field(:id,'userid').set(userid)
 end
 
 When(/^I enter password as "([^"]*)"$/) do |password|
@@ -25,8 +26,7 @@ end
 
 
 Then(/^I should be in main page$/) do
-  assert(browser.link(:xpath, '//*[@id="bs-example-navbar-collapse-1"]/ul/li[1]/a').exists?, "Valid authentication")
-  #assert(browser.title.include?('WMSUI'), "Test Valid User Id and Password")
+  assert(browser.div(:id => "user-default").exists?, "landed in main page")
 end
 
 Then(/^it should throw the error message "([^"]*)"$/) do |error_message|
