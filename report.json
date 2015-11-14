@@ -1,0 +1,288 @@
+[
+  {
+    "uri": "features/login.feature",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "description": "  As a warehouse associate\n  I want to log in to the WMSUI\n  so that I can track the shipments",
+    "line": 1,
+    "elements": [
+      {
+        "id": "login-feature;login-with-correct-user-id-and-password;;2",
+        "keyword": "Scenario Outline",
+        "name": "Login with correct user id and password",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1003803000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am in login page",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/login.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2694812000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the user id as \"Jagannath\"",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/login.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139406000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I enter password as \"Password\"",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/login.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73052000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on \"Sign In\" button",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/login.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76220000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be in main page",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/login.rb:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 683105000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;login-with-correct-user-id-and-wrong-password;;2",
+        "keyword": "Scenario Outline",
+        "name": "Login with correct user id and wrong password",
+        "description": "",
+        "line": 24,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1003821000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am in login page",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 270273000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the user id as \"Jagannath\"",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79629000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I enter password as \"password\"",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71281000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on \"Sign In\" button",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77661000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "it should throw the error message \"Invalid User Id or Password\"",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;login-with-incorrect-user-id-and--password;;2",
+        "keyword": "Scenario Outline",
+        "name": "Login with Incorrect user id and  password",
+        "description": "",
+        "line": 34,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1001450000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am in login page",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/login.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 268713000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the user id as \"username\"",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/login.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71265000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I enter password as \"password\"",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/login.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67095000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on \"Sign In\" button",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/login.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85236000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "it should throw the error message \"Invalid User Id or Password\"",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/login.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
