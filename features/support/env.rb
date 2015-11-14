@@ -1,4 +1,5 @@
-require 'minitest/spec'
+require( 'minitest' )
+require( 'minitest/test' )
 
 class MinitestWorld
   extend Minitest::Assertions
