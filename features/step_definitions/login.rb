@@ -10,6 +10,7 @@ browser = Watir::Browser.new
 
 Given(/^I am in login page$/) do
   browser.goto "http://wmsui.herokuapp.com/login"
+
 end
 
 When(/^I enter the user id as "([^"]*)"$/) do |userid|
@@ -31,7 +32,7 @@ Then(/^I should be in main page$/) do
 end
 
 Then(/^it should throw the error message "([^"]*)"$/) do |error_message|
-  #assert((browser.div(:id, 'message').span(:class, 'label label-danger ng-binding').text == error_message), "Error Message")
+  assert((browser.div(:id, 'message').span(:class, 'label label-danger ng-binding').text == error_message), "Error Message")
 end
 
 
