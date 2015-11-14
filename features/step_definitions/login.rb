@@ -28,7 +28,7 @@ end
 
 Then(/^I should be in main page$/) do
   #Watir::Wait.until { browser.div(:id => "user-default").exists? }
-  sleep 2
+  sleep 10
   assert(browser.div(:id => "user-default").exists?, "landed in main page")
 end
 
