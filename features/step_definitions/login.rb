@@ -25,10 +25,12 @@ When(/^I click on "([^"]*)" button$/) do |submit|
   browser.button(:id, 'login').click
 end
 
+When(/^I wait till page navigates$/) do
+  sleep 3
+end
+
 
 Then(/^I should be in main page$/) do
-  #Watir::Wait.until { browser.div(:id => "user-default").exists? }
-  sleep 10
   assert(browser.div(:id => "user-default").exists?, "landed in main page")
 end
 

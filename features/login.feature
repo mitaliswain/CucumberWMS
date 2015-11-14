@@ -8,6 +8,7 @@ Feature: Login Feature
     When I enter the user id as "<userid>"
     And I enter password as "<password>"
     And I click on "<button>" button
+    And I wait till page navigates
     Then I should be in main page
     Scenarios:
     |userid   | password|button |
@@ -18,6 +19,7 @@ Feature: Login Feature
     When I enter the user id as "<userid>"
     And I enter password as "<password>"
     And I click on "<button>" button
+    And I wait till page navigates
     Then it should throw the error message "<error_message>"
   Scenarios:
     |userid   | password|button |error_message |
@@ -28,6 +30,7 @@ Feature: Login Feature
     When I enter the user id as "<userid>"
     And I enter password as "<password>"
     And I click on "<button>" button
+    And I wait till page navigates
     Then it should throw the error message "<error_message>"
   Scenarios:
     |userid      | password |button |error_message |
