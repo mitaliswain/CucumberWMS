@@ -28,15 +28,17 @@ When(/^I click on "([^"]*)" button$/) do |submit|
 end
 
 When(/^I wait till page navigates$/) do
-  sleep 3
+  p 'I just waited'
 end
 
 
 Then(/^I should be in main page$/) do
+  browser.wait_until(60) { browser.div(:id => "user-default").exists? }
   assert(browser.div(:id => "user-default").exists?, "landed in main page")
 end
 
 Then(/^it should throw the error message "([^"]*)"$/) do |error_message|
+  browser.wait_until(60) { (browser.div(:id, 'message').span(:class, 'label label-danger ng-binding').text == error_message) }
   assert((browser.div(:id, 'message').span(:class, 'label label-danger ng-binding').text == error_message), "Error Message")
 end
 
