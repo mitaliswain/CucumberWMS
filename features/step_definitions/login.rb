@@ -1,6 +1,8 @@
 #require 'minitest/assertions'
 #rcleaequire 'minitest/test'
+require "selenium-webdriver"
 require 'watir-webdriver'
+
 
 include Minitest::Assertions
 
