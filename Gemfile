@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'selenium-webdriver','2.46.2'
 gem 'commonwatir'
 gem 'watir'
 gem 'minitest'
